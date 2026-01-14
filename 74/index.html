@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>かんたん家計簿</title>
+  <link rel="stylesheet" href="css/style.css">
+<script src="js/script.js" defer></script>
+
+</head>
+<body>
+
+<div class="container">
+  <h1>かんたん家計簿</h1>
+
+
+  <input type="month" id="monthSelect">
+
+  <select id="type">
+    <option value="income">収入</option>
+    <option value="expense">支出</option>
+  </select>
+
+  <input type="date" id="date">
+  <input type="text" id="content" placeholder="内容">
+  <input type="number" id="amount" placeholder="金額">
+
+  <button id="addBtn">追加</button>
+
+  <div class="total">
+    <p>収入合計：<span id="incomeTotal">0</span> 円</p>
+    <p>支出合計：<span id="expenseTotal">0</span> 円</p>
+    <p>残高：<span id="balance">0</span> 円</p>
+  </div>
+
+
+  <ul id="list"></ul>
+</div>
+
+</body>
+</html>
